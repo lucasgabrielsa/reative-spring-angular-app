@@ -1,8 +1,9 @@
 package io.lucasdev.reactivespring.repository;
 
 import io.lucasdev.reactivespring.model.Reservation;
-import org.springframework.data.repository.reactive.ReactiveCrudRepository;
+import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ReservationRepository extends ReactiveCrudRepository<Reservation, String> {
-
+@Repository
+public interface ReservationRepository extends ReactiveMongoRepository<Reservation, String> {
 }
